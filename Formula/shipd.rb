@@ -1,28 +1,28 @@
 class Shipd < Formula
   desc "CLI for the Shipd deployment control plane"
   homepage "https://github.com/The-CodeCave/shipd-cli"
-  version "0.1.2"
+  version "0.1.3"
   license :cannot_represent
 
   on_macos do
     on_arm do
-      url "https://github.com/The-CodeCave/shipd-cli/releases/download/v0.1.2/shipd-aarch64-apple-darwin.tar.gz"
-      sha256 "bbd67c2c36c8c95ceb0e93588440441f0c8717ff78bb32486cc220a12fee0d4e"
+      url "https://github.com/The-CodeCave/shipd-cli/releases/download/v0.1.3/shipd-aarch64-apple-darwin.tar.gz"
+      sha256 "6769804dd5ef3b5b050ddcb709aa332266d251a69781f1346488b01aa243e9a0"
     end
     on_intel do
-      url "https://github.com/The-CodeCave/shipd-cli/releases/download/v0.1.2/shipd-x86_64-apple-darwin.tar.gz"
-      sha256 "38ead3ddd432318dfbdcc560c5273f5b13101d2b2500a69f273015dbfae5b794"
+      url "https://github.com/The-CodeCave/shipd-cli/releases/download/v0.1.3/shipd-x86_64-apple-darwin.tar.gz"
+      sha256 "1678d311f68eb22159d11e053f098ce76d861ccea1b31debf53e7250d88aeae8"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/The-CodeCave/shipd-cli/releases/download/v0.1.2/shipd-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "2a1ef2ffc24fd4e098f7532be32afdf4f424a8b854e997f6aaaec051eab3cf0b"
+      url "https://github.com/The-CodeCave/shipd-cli/releases/download/v0.1.3/shipd-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "70dc8b8b63219b35df57f97d63fff49e575bc538f56943c6ed69d6f48f172515"
     end
     on_intel do
-      url "https://github.com/The-CodeCave/shipd-cli/releases/download/v0.1.2/shipd-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "93b48608d33548c4a747074afb3dd3c023496a30de6a4b8aa2281303b8bd0d97"
+      url "https://github.com/The-CodeCave/shipd-cli/releases/download/v0.1.3/shipd-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "75c00aa925edfff1f671a5da64cdd6260f6c324fd2a263322a198d350119232d"
     end
   end
 
