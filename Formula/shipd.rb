@@ -1,7 +1,7 @@
 class Shipd < Formula
   desc "CLI for the Shipd deployment control plane"
   homepage "https://github.com/The-CodeCave/shipd-cli"
-  version "0.1.15"
+  version "0.1.16"
   license :cannot_represent
 
   # This block is why `brew install` needs no Xcode or Command Line Tools.
@@ -24,35 +24,35 @@ class Shipd < Formula
   # The `on_macos`/`on_linux` stanzas below remain the fallback for a tag this
   # Homebrew does not know -- not for a failed fetch, which raises.
   bottle do
-    root_url "https://github.com/The-CodeCave/shipd-cli/releases/download/v0.1.15"
+    root_url "https://github.com/The-CodeCave/shipd-cli/releases/download/v0.1.16"
     rebuild 0
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "0b5fb36cdb41c3018b2b10989de455ab58ebd309c9388756105808658405af17"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "0b5fb36cdb41c3018b2b10989de455ab58ebd309c9388756105808658405af17"
-    sha256 cellar: :any_skip_relocation, big_sur: "9658c5d04c0db85d98a4d937eadaf882baa8dc42eef64928d220b730d7a218c2"
-    sha256 cellar: :any_skip_relocation, sequoia: "9658c5d04c0db85d98a4d937eadaf882baa8dc42eef64928d220b730d7a218c2"
-    sha256 cellar: :any_skip_relocation, arm64_linux: "d52d08c94e53723fccf42149c56040015e747decf5dfef47302706814a121d03"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "25206288b6bbc0af027d1c651eeff8e6c08161335641109af36bdb49a13ff914"
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "35e7afb659cef94c06e11e535231d47e33fbc0d5e1b3c4e329bd1b07a3623ddb"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "35e7afb659cef94c06e11e535231d47e33fbc0d5e1b3c4e329bd1b07a3623ddb"
+    sha256 cellar: :any_skip_relocation, big_sur: "54116b37a99d34430f1fd6c5202e6187dc8d144cc762586b56d289a3274f90bd"
+    sha256 cellar: :any_skip_relocation, sequoia: "54116b37a99d34430f1fd6c5202e6187dc8d144cc762586b56d289a3274f90bd"
+    sha256 cellar: :any_skip_relocation, arm64_linux: "ed423b30003ab6da42d9a58ff77610dfbd212e599c5d06e7136cd243e15aa994"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "a8108fb8ae1fea777357d7b05a7c37a0135f5e00b512ab3b363945535b0db117"
   end
 
   on_macos do
     on_arm do
-      url "https://github.com/The-CodeCave/shipd-cli/releases/download/v0.1.15/shipd-aarch64-apple-darwin.tar.gz"
-      sha256 "598f269af1d327e875bd54904e1193140d48e50cd3901b09e25ca90df06d6e85"
+      url "https://github.com/The-CodeCave/shipd-cli/releases/download/v0.1.16/shipd-aarch64-apple-darwin.tar.gz"
+      sha256 "2d7d482076cc27d415b860a01ec18943a3618742d0ded7b4c66bea75d37dd4e6"
     end
     on_intel do
-      url "https://github.com/The-CodeCave/shipd-cli/releases/download/v0.1.15/shipd-x86_64-apple-darwin.tar.gz"
-      sha256 "e2065582cef764d46c13a4c0988bff8894992c638be9ae51c228ce8fab09363e"
+      url "https://github.com/The-CodeCave/shipd-cli/releases/download/v0.1.16/shipd-x86_64-apple-darwin.tar.gz"
+      sha256 "6d587a6838ada6c19d5778a72e375083a39793809f22bab51c4f3d1a54b5caa7"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/The-CodeCave/shipd-cli/releases/download/v0.1.15/shipd-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "fefb1efbe79456f121c1161c7d65c632b6f2542ce2a48f90c366790474cac5e7"
+      url "https://github.com/The-CodeCave/shipd-cli/releases/download/v0.1.16/shipd-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "ba1b7bf3f1395d2eee146f1bafd6ea8ed589025ebbca16b611fa40d1e9c98e30"
     end
     on_intel do
-      url "https://github.com/The-CodeCave/shipd-cli/releases/download/v0.1.15/shipd-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "d7c0e7d36017ba297dc2c209f2b6f93839affceaa76403663846604cef9ae101"
+      url "https://github.com/The-CodeCave/shipd-cli/releases/download/v0.1.16/shipd-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "2b9dfb2abeddd478abe446d84b1e4fdf1f72070e844d7d80d511ab224495e965"
     end
   end
 
